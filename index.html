@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: brown;">String</h1>
+    <P>Que1:Count Characters</P>
+    <p>Ans:</p>
+    <pre>const countCharacters = (S) => 
+{
+  let countOfA=0 , countOfD=0;
+  for(let i=0; i < S.length; i++){
+    if(S[i]=="A")
+       countOfA++;
+    if(S[i]=="D")
+       countOfD++;
+  }
+  let result=[];
+  result.push(countOfA);
+  result.push(countOfD);
+  return result;
+};
+</pre>
+<br>
+<p>Que2:Count the Heads</p>
+<p>Ans:</p>
+<pre>for(let i=0;i < s.length;i++){
+  let value=map.get(s[i]);
+  map.set(s[i],value+1);
+}
+
+let res="";
+for(let [k,v] of map.entries()){
+  if(v>1){
+    res=res+k+v;
+}
+}
+return res;
+};</pre>
+<br>
+<p>Que3:Count the Vowels</p>
+<p>Ans:</p>
+<pre>var Count_Vowels= (S) => 
+{
+  let counter=0;
+      let vowels="aeiou";
+    for(let i=0;i < S.length;i++){
+    for(let j=0;j < vowels.length;j++){
+      if(S[i]===vowels[j]){
+      counter++;
+      }
+        }
+      }
+    return counter; 
+};
+ </pre>
+ <br>
+ <p>Que4:Concatenate the Strings</p>
+ <p>Ans:</p>
+ <pre>Concatenate_Strings = (S1, S2) => 
+{
+   return S1.concat(S2);    
+};</pre>
+<br>
+<p>Que5:Find Length</p>
+<p>Ans:</p>
+<pre>const findLength = (S) => 
+{
+  let a=S.length;
+   return(a);
+};
+ </pre>
+ <br>
+ <p>Que6:Find the Winner</p>
+ <p>Ans:</p>
+ <pre>var Game_Winner = (S) => 
+{
+  let a=0,d=0;
+  for(let i=0;i<S.length;i++){
+    if(S[i]=="A"){
+      a++;
+    }
+    else{
+      d++;
+    }
+  }
+  if(a==d){
+    return "Draw";
+  }
+  if(a>d){
+    return "Aditya";
+  }
+  else{
+    return "Danish";
+  }
+}
+ 
+</pre>
+<br>
+<p>Que7:Join Strings</p>
+<p>Ans:</p>
+<pre>const joinStrings = (S, P) => 
+{
+return (S + P);   
+};</pre>
+<br>
+<p>Que8:Plaindrome Check</p>
+<p>Ans:</p>
+<pre>var Palin_Check = (str) =>
+{
+let count = 0;
+let len = str.length - 1;
+for(let i = 0; i < str.length ; i++){
+if(str[i] === str[len]){
+count++;
+len--;
+}else{
+return "False";
+}
+}
+if(count>0){
+return "True";
+}	 
+}</pre>
+<br>
+<p>Que9:Reverse the String</p>
+<p>Ans:</p>
+<pre>var Reverse_String = (str) => 
+{
+let reverse="";
+for(let i = str.length-1; i >= 0 ; i--){
+reverse+=str[i];
+}   
+ return reverse;      
+};</pre>
+<br>
+<p>Que10:Match the Strings</p>
+<p>Ans:</p>
+<pre>var String_Match = (S1,S2) => 
+{
+ if(S1 === S2){
+ return `YES`;
+}else{
+return `NO`;
+}  
+};</pre>
+<br>
+<p>Que10:String Replace</p>
+<p>Ans:</p>
+<pre>var Replace = (S, pattern , text) => 
+{
+return(S.replace(pattern,text));   
+};</pre>
+<br>
+<p>Que11:Split the String</p>
+<p>Ans:</p>
+<pre>var Split_the_string = (S) => 
+{      
+let splitString = S.split(" ");
+return splitString;      
+};</pre>
+<br>
+<p>Que12:Count the Vowels and Consonants</p>
+<p>Ans:</p>
+<pre>
+  var Count_Vowels= (S) => 
+{
+    let countOfVowel=0;
+    for(let i=0;i < S.length;i++){
+      if(S[i]==="A" || S[i]==="E" || S[i]==="I" || S[i]==="O" || S[i]==="U" || S[i]==="a" || S[i]==="e" || S[i]==="i" || S[i]==="o"|| S[i]==="u"){
+        countOfVowel++;
+      }
+    }  
+    return countOfVowel;  
+};
+var Count_Consonants= (S) => 
+{
+    let countOfConsonant=0;
+    for(let i=0;i < S.length;i++){
+      if(S[i] !=="A" && S[i]!=="E" && S[i]!=="I" && S[i]!=="O" && S[i]!=="U" && S[i]!=="a" && S[i]!=="e" && S[i]!=="i" && S[i]!=="o" && S[i]!=="u"){
+        countOfConsonant++;
+      }
+    }  
+    return countOfConsonant;   
+};
+</pre>
+</body>
+</html>
